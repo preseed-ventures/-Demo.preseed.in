@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nishchal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/ico/Nfavicon.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '798287173590027',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=798287173590027&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+function compute(){
+var amount = document.getElementById('amount').value;
+if(amount%500!=0)
+{ alert("only multiple of 500"); 
+amount=0;
+}
+if(amount==0)
+{
+
+}
+var book= amount/500;
+book=parseInt(book);
+document.getElementById('book').innerHTML =""+book;
+
+}
+function compute1(){
+var book1 = document.getElementById('book1').value;
+
+var amount1= book1 * 500;
+amount1=parseInt(amount1);
+document.getElementById('amount1').innerHTML =""+amount1;
+
+
+}
+
+</script>
+
+
+
+
+<div id="nave" style="max-height:50px;width:100%;text-align:right;padding:20px 25px 5px 0;display:block;margin-bottom:20px;">
+                    <ul style="padding-top:5px;padding-bottom:5px;">
+                    <li style="display:inline-block;padding-left:10px;padding-right:10px;">
+                            <a href="https://twitter.com/nishchal" target="_blank">
+                                <img id="t" src="twitter.jpg" style="max-width:80%;max-height:80%;">
+                            </a>
+                        </li>
+                        </ul>
+                        </div>
+
+
+<div class="col-md-2 column"></div>
+<div id="loginScreen"class="col-md-8 column">
+      <div class="container">
+      <br>
+      <br>
+        <div class="col-md-8 column">
+             <form  style="display: inline" action="https://www.payumoney.com/payments/#/user/B8BD37C4026B1CEE1ABDA26B226F8579"  method="get" >  
+            <label>AMOUNT YOU WOULD LIKE TO CONTRIBUTE</label>
+             <input id="amount" type="number"  onchange="compute()" placeholder="press enter" required>
+             <br><br>
+             <label>NUMBER OF BOOKS CAN BE PURCHASED : </label>
+             <label id="book" ></label>  
+             <br>
+             <br>
+            
+             
+             <br>
+             <br>
+             <br>
+             <br>
+           
+           <CENTER> <button type="submit" class="btn btn-lg  btn-primary">Proceed</button></CENTER>
+           </form>
+           <br>
+           <br>
+           </div>
+
+            <a href="#" class="cancel">&times;</a>        
+      </div>
+      </div>
+      </div>
+  
+  <div id="cover" > </div> 
+
+
+<div id="loginScreen1"class="col-md-8 column">
+      <div class="container">
+      <br>
+      <br>
+        <div class="col-md-8 column">
+             <form  style="display: inline" action="https://www.payumoney.com/payments/#/user/B8BD37C4026B1CEE1ABDA26B226F8579"  method="get" >  
+            <label>NUMBER OF BOOKS YOU WANT TO PURCHASE</label>
+             <input id="book1" type="number"  onchange="compute1()" placeholder="press enter" required>
+             <br><br>
+             <label>NUMBER OF BOOKS CAN BE PURCHASED : </label>
+             <label id="amount1" ></label>  
+             <br>
+             <br>
+            
+             
+             <br>
+             <br>
+             <br>
+             <br>
+           
+           <CENTER> <button type="submit" class="btn btn-lg  btn-primary">Proceed</button></CENTER>
+           </form>
+           <br>
+           <br>
+           </div>
+
+            <a href="#" class="cancel1">&times;</a>        
+      </div>
+      </div>
+      </div>
+  
+  <div id="cover1" > </div> 
+
+
+
+<div class="container">
+<br><br>
+
+  
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="row clearfix"> 
+        <div class="col-md-4 column"></div>
+        <div class="col-md-4 column">
+            <div class="img-responsive text-center">
+              <br>
+              <img alt="logo" src="img/small.png" class="img-circle">
+              <center><h2 style="text-align:center; padding-bottom:8%; text-size:30px;"> Love | Serve | Inspire</h2>
+              </center>
+            </div>
+        </div>
+      </div>
+     <br>
+     <br><br>
+
+ <div class="jumbotron" >
+       <p>
+       Nishchal's words are profound yet simple to say the least. His diction and writing is free flowing, and one almost anyone who has an even slightly expanded consciousness, can resonate with. He serves (wo)mankind, by liberating them from their own shackles of conditioning. This book is only the beginnings of a legend in the making. One who will set the world free, to move closer to their own authentic truth.</p>
+      </div>
+
+
+       <div class="col-md-2 column"></div>
+<div class="col-md-10 column">
+           <h3><strong>AMOUNT YOU WOULD LIKE TO CONTRIBUTE</strong></h3>
+            <BR>
+            <br>
+            <br>
+            </BR>
+
+
+             <h4><strong>Would You Like Us To Donate The Books For You?</strong></h4>
+           <button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#myModal" >yes
+            </button><br><br><br><br>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">How do we donate the books?</h4>
+      </div>
+      <div class="modal-body">
+        <p><strong> 
+Our entire day goes around meeting college kids and meet-ups with The young generation with a streak of new ideas building disruptive startups. Along side this, we also visit various colleges and universities for talks. These are the various spaces where we know the words from these donated book will motivate and inspire them to follow their own bliss, gifted by you!</strong></p>
+<br>
+</br>
+       <div>
+       <label>How Many Books You Would Like To Donate  <label>
+         <input type="number" id="donate"placeholder="enter no of books">
+       </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" value="number">submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+       
+       
+
+       <div class="col-md-2 column"> </div>
+       <div class="col-md-8 column">
+           
+           <h4><strong>Pre Order a Book ?</strong></h4>
+            
+           <ul >
+          <li class="dropdown">
+            <a href="#" class=" btn btn-primary btn-lg " data-toggle="dropdown" role="button" aria-expanded="false">yes</a>
+              <ul class="dropdown-menu" role="menu">
+              <li><a href="#loginScreen">AMOUNT YOU WOULD LIKE TO CONTRIBUTE</a></li>
+              <li class="divider"></li>
+              <li><a href="#loginScreen1">NUMBER OF BOOKS YOU WANT TO PURCHASE</a></li>
+              <li class="divider"></li>
+              </ul>
+          </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+
+       </div>        
+      
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>    
+<center>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              
+                <div class="span4">
+                 <a href="https://twitter.com/thepreseed" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @twitter</a>
+                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/thepreseed" data-dnt="true">Tweet</a>
+        
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+         </div>
+         <br>
+                        
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fthepreseed&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+            </center>
+<div class="fb-comments" data-href="http://www.facebook.com/thepreseed" data-numposts="5" data-colorscheme="light"></div> 
+
+</body>

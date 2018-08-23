@@ -1,1 +1,2 @@
-# -Demo.preseed.in
+Demo.preseed.in
+===============
